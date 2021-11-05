@@ -9,15 +9,14 @@ const sleep = (ms) => {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-textChecker = (textIn, wordBank) => {
+const setTextInArray = (textIn, wordBank) => {
 	if (textIn.value != '') {
 		textInArray = textIn.value.split(/\W/)
 		// console.log(textInArray)
-		return textInArray
 	}
 }
 
-const setWordBank = async (wordBank) => {
+const setWordBankArray = async (wordBank) => {
 	if (wordBank.value != '') {
 		wordBankArray = wordBank.value.split(/\W/);
 		// console.log(wordBankArray)
@@ -45,7 +44,7 @@ addEventListener('paste', async (event) => {
 
 addEventListener('keyup', async (event) => {
 	await sleep(500)
-	setWordBank(wordBankIn)
-	textChecker(textToCheck, wordBankArray)
+	setWordBankArray(wordBankIn)
+	setTextInArray(textToCheck, wordBankArray)
 	compareText(wordBankArray, textInArray)
 })
