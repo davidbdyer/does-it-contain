@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="app.css" />
+		<title>Does It Contain?</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="app.css">
-	<title>Does It Contain?</title>
-</head>
+	<body>
+		<h1>The Checker!</h1>
 
-<body>
-	<h1>The Checker!</h1>
+		<main>
+			<div class="instructions">
+				<h2>Instructions</h2>
+				<p>Word list can be separated by space or comma.</p>
+			</div>
+			<div class="text-area">
+				<label for="word-bank">Word Bank</label>
+				<textarea name="word-bank" id="word-bank" cols="100" rows="10"></textarea>
+			</div>
 
-	<div>
-		<label for="word-bank">Word Bank</label>
-		<textarea name="word-bank" id="word-bank" cols="100" rows="10"></textarea>
-	</div>
+			<div class="text-area">
+				<label for="text-to-check">Text To Check</label>
+				<textarea name="text-to-check" id="text-to-check" cols="100" rows="10"></textarea>
+			</div>
+			<div class="btn-group">
+				<button class="btn" id="check-btn">Check</button>
+				<button class="btn" id="reset-btn">Reset</button>
+			</div>
+		</main>
 
-	<div>
-		<label for="text-to-check">Text To Check</label>
-		<textarea name="text-to-check" id="text-to-check" cols="100" rows="10"></textarea>
-	</div>
+		<p id="text-output"></p>
 
-	<p id="text-output"></p>
-
-	<script src="app.js"></script>
-</body>
-
+		<script src="app.js"></script>
+	</body>
 </html>

@@ -1,11 +1,85 @@
+:root {
+	--clr-secondary: #415a77;
+	--clr-primary: #e0e1dd;
+	--border-rad: 0.5em;
+}
+
+/* components */
+
 label {
 	display: block;
+	font-size: 0.75rem;
+}
+
+.text-area {
+	/* margin-top: 4rem; */
+}
+
+.text-area textarea {
+	border: 0;
+	border-radius: var(--border-rad);
+	background-color: var(--clr-primary);
+	font-family: inherit;
 }
 
 textarea {
-	margin-bottom: 4rem;
+	width: 100%;
 }
 
-b {
-	color: red;
+.btn {
+	display: inline-flex;
+	border: 0;
+	border-radius: var(--border-rad);
+	background-color: var(--clr-primary);
+	line-height: 1.5rem;
+}
+
+.btn:active {
+	opacity: 0.9;
+}
+
+.btn-group {
+	display: flex;
+	margin-left: auto;
+	gap: 0.25rem;
+}
+
+body {
+	max-width: 60vw;
+	min-height: 100%;
+	margin: auto;
+	background-color: var(--clr-secondary);
+	color: var(--clr-primary);
+	font-family: system-ui;
+}
+
+main {
+	display: grid;
+	place-items: start;
+	width: 100%;
+	gap: 2rem;
+}
+
+.instructions h2 {
+	margin-bottom: 0;
+}
+
+.instructions p {
+	margin-top: 0;
+}
+
+#text-output {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	gap: 0.5em;
+}
+
+.found {
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	border-radius: 100vmax;
+	background-color: var(--clr-primary);
+	color: var(--clr-secondary);
+	font-size: 0.75rem;
 }
