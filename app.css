@@ -9,20 +9,14 @@
 label {
 	display: block;
 	font-size: 0.75rem;
+	margin-bottom: .4rem;
 }
 
-.text-area {
-	/* margin-top: 4rem; */
-}
-
-.text-area textarea {
+textarea {
 	border: 0;
 	border-radius: var(--border-rad);
 	background-color: var(--clr-primary);
 	font-family: inherit;
-}
-
-textarea {
 	width: 100%;
 }
 
