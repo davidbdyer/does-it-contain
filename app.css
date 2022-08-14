@@ -1,3 +1,10 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 :root {
 	--clr-secondary: #415a77;
 	--clr-primary: #e0e1dd;
