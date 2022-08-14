@@ -35,6 +35,8 @@ const compareText = (wordBank, textIn) => {
 	for (word of textIn) {
 		if (wordBank.includes(word)) {
 			textOutput.innerHTML += `<span class="found"> ${word} </span>`;
+		} else {
+			textOutput.innerHTML += word;
 		}
 	}
 };
